@@ -13,7 +13,7 @@ chronyc sourcestats -v
 chronyc tracking -v
 date
 # install v2ray
-wget https://netzvps.herokuapp.com/vpn/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/di2nk/all/main/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
@@ -506,22 +506,22 @@ systemctl start v2ray@trojan.service
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O addws "https://netzvps.herokuapp.com/vpn/addws.sh"
-wget -O addvless "https://netzvps.herokuapp.com/vpn/addvless.sh"
-wget -O addtr "https://netzvps.herokuapp.com/vpn/addtr.sh"
-wget -O delws "https://netzvps.herokuapp.com/vpn/delws.sh"
-wget -O delvless "https://netzvps.herokuapp.com/vpn/delvless.sh"
-wget -O deltr "https://netzvps.herokuapp.com/vpn/deltr.sh"
-wget -O cekws "https://netzvps.herokuapp.com/vpn/cekws.sh"
-wget -O cekvless "https://netzvps.herokuapp.com/vpn/cekvless.sh"
-wget -O cektr "https://netzvps.herokuapp.com/vpn/cektr.sh"
-wget -O renewws "https://netzvps.herokuapp.com/vpn/renewws.sh"
-wget -O renewvless "https://netzvps.herokuapp.com/vpn/renewvless.sh"
-wget -O renewtr "https://netzvps.herokuapp.com/vpn/renewtr.sh"
-wget -O xp-ws "https://netzvps.herokuapp.com/vpn/xp-ws.sh"
-wget -O xp-tr "https://netzvps.herokuapp.com/vpn/xp-tr.sh"
-wget -O xp-vless "https://netzvps.herokuapp.com/vpn/xp-vless.sh"
-wget -O certv2ray "https://netzvps.herokuapp.com/vpn/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/di2nk/all/main/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/di2nk/all/main/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/di2nk/all/main/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/di2nk/all/main/delws.sh"
+wget -O delvless "https://raw.githubusercontent.com/di2nk/all/main/delvless.sh"
+wget -O deltr "https://raw.githubusercontent.com/di2nk/all/main/deltr.sh"
+wget -O cekws "https://raw.githubusercontent.com/di2nk/all/main/cekws.sh"
+wget -O cekvless "https://raw.githubusercontent.com/di2nk/all/main/cekvless.sh"
+wget -O cektr "https://raw.githubusercontent.com/di2nk/all/main/cektr.sh"
+wget -O renewws "https://raw.githubusercontent.com/di2nk/all/main/renewws.sh"
+wget -O renewvless "https://raw.githubusercontent.com/di2nk/all/main/renewvless.sh"
+wget -O renewtr "https://raw.githubusercontent.com/di2nk/all/main/renewtr.sh"
+wget -O xp-ws "https://raw.githubusercontent.com/di2nk/all/main/xp-ws.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/di2nk/all/main/xp-tr.sh"
+wget -O xp-vless "https://raw.githubusercontent.com/di2nk/all/main/xp-vless.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/di2nk/all/main/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr
