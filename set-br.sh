@@ -1,7 +1,7 @@
 #!/bin/bash
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://netzvps.herokuapp.com/vpn/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/di2nk/all/main/rclone.conf"
 apt install msmtp-mta ca-certificates bsd-mailx -y
 cat<<EOF>>/etc/msmtprc
 defaults
@@ -20,11 +20,11 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://netzvps.herokuapp.com/vpn/autobackup.sh"
-wget -O backup "https://netzvps.herokuapp.com/vpn/backup.sh"
-wget -O bckp "https://netzvps.herokuapp.com/vpn/bckp.sh"
-wget -O restore "https://netzvps.herokuapp.com/vpn/restore.sh"
-wget -O strt "https://netzvps.herokuapp.com/vpn/strt.sh"
+wget -O autobackup "https://raw.githubusercontent.com/di2nk/all/main/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/di2nk/all/main/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/di2nk/all/main/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/di2nk/all/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/di2nk/all/main/strt.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
