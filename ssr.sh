@@ -142,11 +142,11 @@ Save_iptables
 Start_SSR
 }
 Install_SSR
-wget -O /usr/bin/ssr https://netzvps.herokuapp.com/vpn/ssrmu.sh && chmod +x /usr/bin/ssr
-wget -O /usr/bin/addssr https://netzvps.herokuapp.com/vpn/addssr.sh && chmod +x /usr/bin/addssr
-wget -O /usr/bin/delssr https://netzvps.herokuapp.com/vpn/delssr.sh && chmod +x /usr/bin/delssr
-wget -O /usr/bin/xp-ssr https://netzvps.herokuapp.com/vpn/xp-ssr.sh && chmod +x /usr/bin/xp-ssr
-wget -O /usr/bin/renewssr https://netzvps.herokuapp.com/vpn/renewssr.sh && chmod +x /usr/bin/renewssr
+wget -O /usr/bin/ssr https://raw.githubusercontent.com/di2nk/all/main/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/addssr https://raw.githubusercontent.com/di2nk/all/main/addssr.sh && chmod +x /usr/bin/addssr
+wget -O /usr/bin/delssr https://raw.githubusercontent.com/di2nk/all/main/delssr.sh && chmod +x /usr/bin/delssr
+wget -O /usr/bin/xp-ssr https://raw.githubusercontent.com/di2nk/all/main/xp-ssr.sh && chmod +x /usr/bin/xp-ssr
+wget -O /usr/bin/renewssr https://raw.githubusercontent.com/di2nk/all/main/renewssr.sh && chmod +x /usr/bin/renewssr
 touch /usr/local/shadowsocksr/akun.conf
 rm -f /root/ssr.sh
 echo "0 0 * * * root xp-ssr" >> /etc/crontab
