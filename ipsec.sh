@@ -279,14 +279,14 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://netzvps.herokuapp.com/vpn/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://netzvps.herokuapp.com/vpn/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/xp-l2tp https://netzvps.herokuapp.com/vpn/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
-wget -O /usr/bin/addpptp https://netzvps.herokuapp.com/vpn/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://netzvps.herokuapp.com/vpn/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/xp-pptp https://netzvps.herokuapp.com/vpn/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
-wget -O /usr/bin/renewpptp https://netzvps.herokuapp.com/vpn/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://netzvps.herokuapp.com/vpn/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/di2nk/all/main/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/di2nk/all/main/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/di2nk/all/main/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
+wget -O /usr/bin/addpptp https://raw.githubusercontent.com/di2nk/all/main/addpptp.sh && chmod +x /usr/bin/addpptp
+wget -O /usr/bin/delpptp https://raw.githubusercontent.com/di2nk/all/main/delpptp.sh && chmod +x /usr/bin/delpptp
+wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/di2nk/all/main/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
+wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/di2nk/all/main/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/di2nk/all/main/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
 touch /var/lib/premium-script/data-user-l2tp
 touch /var/lib/premium-script/data-user-pptp
 rm -f /root/ipsec.sh
