@@ -89,11 +89,11 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O addwg "https://netzvps.herokuapp.com/vpn/addwg.sh"
-wget -O delwg "https://netzvps.herokuapp.com/vpn/delwg.sh"
-wget -O cekwg "https://netzvps.herokuapp.com/vpn/cekwg.sh"
-wget -O xp-wg "https://netzvps.herokuapp.com/vpn/xp-wg.sh"
-wget -O renewwg "https://netzvps.herokuapp.com/vpn/renewwg.sh"
+wget -O addwg "https://raw.githubusercontent.com/di2nk/all/main/addwg.sh"
+wget -O delwg "https://raw.githubusercontent.com/di2nk/all/main/delwg.sh"
+wget -O cekwg "https://raw.githubusercontent.com/di2nk/all/main/cekwg.sh"
+wget -O xp-wg "https://raw.githubusercontent.com/di2nk/all/main/xp-wg.sh"
+wget -O renewwg "https://raw.githubusercontent.com/di2nk/all/main/renewwg.sh"
 chmod +x addwg
 chmod +x delwg
 chmod +x cekwg
