@@ -311,7 +311,7 @@ cat> /etc/v2ray/vnone.json << END
   },
   "inbounds": [
     {
-      "port": 880,
+      "port": 8880,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -483,12 +483,12 @@ END
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 5443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 6443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 880 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 5443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 6443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 880 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
