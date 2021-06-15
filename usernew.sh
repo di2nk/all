@@ -36,7 +36,7 @@ echo -e "IP Server      : $IP"
 echo -e "Host           : $domain"
 echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 143, 109"
-echo -e "Port Ssh CDN   : 8880
+echo -e "Port Ssh CDN   : 2086"
 echo -e "SSL/TLS        : 443"
 echo -e "Port Squid     : 3128, 8080 (limit to IP SSH)" 
 echo -e "OpenVPN        : TCP 1194 http://$IP:81/client-tcp-1194.ovpn"
