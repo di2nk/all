@@ -10,7 +10,7 @@ read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
 IP=$(wget -qO- icanhazip.com);
-echo Script AutoCreate Akun SSH dan OpenVPN by Adi Subagja
+echo Script AutoCreate Akun SSH dan OpenVPN
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
@@ -36,6 +36,7 @@ echo -e "IP Server      : $IP"
 echo -e "Host           : $domain"
 echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 143, 109"
+echo -e "Port Ssh CDN   : 8880
 echo -e "SSL/TLS        : 443"
 echo -e "Port Squid     : 3128, 8080 (limit to IP SSH)" 
 echo -e "OpenVPN        : TCP 1194 http://$IP:81/client-tcp-1194.ovpn"
@@ -44,4 +45,4 @@ echo -e "OpenVPN        : SSL 992 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "badvpn         : 7100, 7200, 7300"
 echo -e "==============================="
 echo -e "Aktif Sampai   : $exp"
-echo -e "Script by AdiSubagja"
+echo -e "Accepted by \e[1;33;44m Semar \e[0m"
