@@ -72,5 +72,5 @@ echo " Multi Login = kill "
 echo " Cara pakai : kill [nombor PID] "
 echo "-------------------------------------"
 
-echo " By AdiSubagja"
+echo " By \e[1;33;44m Semar \e[0m"
 echo "";
